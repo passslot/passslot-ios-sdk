@@ -1,0 +1,54 @@
+
+Usage
+=====
+
+### Step 1: Add the PassSlot.framework to your Project
+
+Drag the PassSlot.framework folder into your project and add it to your target
+
+![](https://github.com/passslot/passslot-ios-sdk/raw/master/docs/gfx/add_passslot.png)
+![](https://github.com/passslot/passslot-ios-sdk/raw/master/docs/gfx/add_passslot_finish.png)
+
+### Step 2: Add other Libraries
+
+Link your binary with the following libraries:
+
+- PassKit
+- CFNetwork
+- Security
+- SystemConfiguration
+
+![](https://github.com/passslot/passslot-ios-sdk/raw/master/docs/gfx/link_libraries.png)
+![](https://github.com/passslot/passslot-ios-sdk/raw/master/docs/gfx/add_libraries.png)
+![](https://github.com/passslot/passslot-ios-sdk/raw/master/docs/gfx/add_libraries_done.png)
+
+### Step 3: Add Linker Flags
+
+Add `-ObjC` to your `Other Linker Flags`
+
+![](https://github.com/passslot/passslot-ios-sdk/raw/master/docs/gfx/linker_flags.png)
+
+
+### Step 4: Import the PassSlot SDK Headers
+
+Import the PassSlot headers where you need it. 
+
+```
+#import <PassSlot/PassSlot.h>
+```
+
+NOTE: If you do not want to import PassSlot.h in every file you may add it into you pre-compiled header (`<projectname>_Prefix.pch`) file inside of the `#ifdef __OBJC__` section
+
+
+
+### Step 5: Start PassSlot with your App Key
+
+```
+-(BOOL)application:(UIApplication *)application 
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // ...
+    [PassSlot start:@"<your app key>"];
+    // ...
+}
+```
