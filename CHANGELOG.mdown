@@ -1,0 +1,7 @@
+###0.2 - September 20, 2012
+
+* armv7s support
+
+###0.1 - July 25, 2012
+
+* Initial Version
