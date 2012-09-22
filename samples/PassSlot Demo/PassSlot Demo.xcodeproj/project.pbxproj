@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		624D1802160E2A61001C52E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1801160E2A61001C52E9 /* UIKit.framework */; };
+		624D1804160E2A61001C52E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1803160E2A61001C52E9 /* Foundation.framework */; };
+		624D1806160E2A61001C52E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1805160E2A61001C52E9 /* CoreGraphics.framework */; };
+		624D180C160E2A61001C52E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 624D180A160E2A61001C52E9 /* InfoPlist.strings */; };
+		624D180E160E2A61001C52E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 624D180D160E2A61001C52E9 /* main.m */; };
+		624D1812160E2A61001C52E9 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 624D1811160E2A61001C52E9 /* PSAppDelegate.m */; };
+		624D1814160E2A61001C52E9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 624D1813160E2A61001C52E9 /* Default.png */; };
+		624D1816160E2A61001C52E9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 624D1815160E2A61001C52E9 /* Default@2x.png */; };
+		624D1818160E2A61001C52E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 624D1817160E2A61001C52E9 /* Default-568h@2x.png */; };
+		624D181B160E2A61001C52E9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624D1819160E2A61001C52E9 /* MainStoryboard.storyboard */; };
+		624D181E160E2A61001C52E9 /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624D181D160E2A61001C52E9 /* PSViewController.m */; };
+		624D1826160E2A61001C52E9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1825160E2A61001C52E9 /* SenTestingKit.framework */; };
+		624D1827160E2A61001C52E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1801160E2A61001C52E9 /* UIKit.framework */; };
+		624D1828160E2A61001C52E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1803160E2A61001C52E9 /* Foundation.framework */; };
+		624D1830160E2A61001C52E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 624D182E160E2A61001C52E9 /* InfoPlist.strings */; };
+		624D1833160E2A61001C52E9 /* PassSlot_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 624D1832160E2A61001C52E9 /* PassSlot_DemoTests.m */; };
+		624D183F160E2A75001C52E9 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D183E160E2A75001C52E9 /* PassKit.framework */; };
+		624D1841160E2A7A001C52E9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1840160E2A7A001C52E9 /* CFNetwork.framework */; };
+		624D1843160E2A80001C52E9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1842160E2A80001C52E9 /* Security.framework */; };
+		624D1845160E2A86001C52E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D1844160E2A86001C52E9 /* SystemConfiguration.framework */; };
+		78D6AC95160E77810002FE14 /* PassSlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D6AC94160E77810002FE14 /* PassSlot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		624D1829160E2A61001C52E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624D17F4160E2A61001C52E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 624D17FC160E2A61001C52E9;
+			remoteInfo = "PassSlot Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		624D17FD160E2A61001C52E9 /* PassSlot Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PassSlot Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		624D1801160E2A61001C52E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		624D1803160E2A61001C52E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		624D1805160E2A61001C52E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		624D1809160E2A61001C52E9 /* PassSlot Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PassSlot Demo-Info.plist"; sourceTree = "<group>"; };
+		624D180B160E2A61001C52E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		624D180D160E2A61001C52E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		624D180F160E2A61001C52E9 /* PassSlot Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassSlot Demo-Prefix.pch"; sourceTree = "<group>"; };
+		624D1810160E2A61001C52E9 /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
+		624D1811160E2A61001C52E9 /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAppDelegate.m; sourceTree = "<group>"; };
+		624D1813160E2A61001C52E9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		624D1815160E2A61001C52E9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		624D1817160E2A61001C52E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		624D181A160E2A61001C52E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		624D181C160E2A61001C52E9 /* PSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		624D181D160E2A61001C52E9 /* PSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
+		624D1824160E2A61001C52E9 /* PassSlot DemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PassSlot DemoTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		624D1825160E2A61001C52E9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		624D182D160E2A61001C52E9 /* PassSlot DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PassSlot DemoTests-Info.plist"; sourceTree = "<group>"; };
+		624D182F160E2A61001C52E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		624D1831160E2A61001C52E9 /* PassSlot_DemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassSlot_DemoTests.h; sourceTree = "<group>"; };
+		624D1832160E2A61001C52E9 /* PassSlot_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassSlot_DemoTests.m; sourceTree = "<group>"; };
+		624D183E160E2A75001C52E9 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		624D1840160E2A7A001C52E9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		624D1842160E2A80001C52E9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		624D1844160E2A86001C52E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		78D6AC94160E77810002FE14 /* PassSlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassSlot.framework; path = ../../sdk/PassSlot.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		624D17FA160E2A61001C52E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624D1845160E2A86001C52E9 /* SystemConfiguration.framework in Frameworks */,
+				624D1843160E2A80001C52E9 /* Security.framework in Frameworks */,
+				624D1841160E2A7A001C52E9 /* CFNetwork.framework in Frameworks */,
+				624D183F160E2A75001C52E9 /* PassKit.framework in Frameworks */,
+				624D1802160E2A61001C52E9 /* UIKit.framework in Frameworks */,
+				624D1804160E2A61001C52E9 /* Foundation.framework in Frameworks */,
+				624D1806160E2A61001C52E9 /* CoreGraphics.framework in Frameworks */,
+				78D6AC95160E77810002FE14 /* PassSlot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624D1820160E2A61001C52E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624D1826160E2A61001C52E9 /* SenTestingKit.framework in Frameworks */,
+				624D1827160E2A61001C52E9 /* UIKit.framework in Frameworks */,
+				624D1828160E2A61001C52E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		624D17F2160E2A61001C52E9 = {
+			isa = PBXGroup;
+			children = (
+				624D1844160E2A86001C52E9 /* SystemConfiguration.framework */,
+				624D1842160E2A80001C52E9 /* Security.framework */,
+				624D1840160E2A7A001C52E9 /* CFNetwork.framework */,
+				624D183E160E2A75001C52E9 /* PassKit.framework */,
+				78D6AC94160E77810002FE14 /* PassSlot.framework */,
+				624D1807160E2A61001C52E9 /* PassSlot Demo */,
+				624D182B160E2A61001C52E9 /* PassSlot DemoTests */,
+				624D1800160E2A61001C52E9 /* Frameworks */,
+				624D17FE160E2A61001C52E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		624D17FE160E2A61001C52E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				624D17FD160E2A61001C52E9 /* PassSlot Demo.app */,
+				624D1824160E2A61001C52E9 /* PassSlot DemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		624D1800160E2A61001C52E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				624D1801160E2A61001C52E9 /* UIKit.framework */,
+				624D1803160E2A61001C52E9 /* Foundation.framework */,
+				624D1805160E2A61001C52E9 /* CoreGraphics.framework */,
+				624D1825160E2A61001C52E9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		624D1807160E2A61001C52E9 /* PassSlot Demo */ = {
+			isa = PBXGroup;
+			children = (
+				624D1810160E2A61001C52E9 /* PSAppDelegate.h */,
+				624D1811160E2A61001C52E9 /* PSAppDelegate.m */,
+				624D1819160E2A61001C52E9 /* MainStoryboard.storyboard */,
+				624D181C160E2A61001C52E9 /* PSViewController.h */,
+				624D181D160E2A61001C52E9 /* PSViewController.m */,
+				624D1808160E2A61001C52E9 /* Supporting Files */,
+			);
+			path = "PassSlot Demo";
+			sourceTree = "<group>";
+		};
+		624D1808160E2A61001C52E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				624D1809160E2A61001C52E9 /* PassSlot Demo-Info.plist */,
+				624D180A160E2A61001C52E9 /* InfoPlist.strings */,
+				624D180D160E2A61001C52E9 /* main.m */,
+				624D180F160E2A61001C52E9 /* PassSlot Demo-Prefix.pch */,
+				624D1813160E2A61001C52E9 /* Default.png */,
+				624D1815160E2A61001C52E9 /* Default@2x.png */,
+				624D1817160E2A61001C52E9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		624D182B160E2A61001C52E9 /* PassSlot DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				624D1831160E2A61001C52E9 /* PassSlot_DemoTests.h */,
+				624D1832160E2A61001C52E9 /* PassSlot_DemoTests.m */,
+				624D182C160E2A61001C52E9 /* Supporting Files */,
+			);
+			path = "PassSlot DemoTests";
+			sourceTree = "<group>";
+		};
+		624D182C160E2A61001C52E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				624D182D160E2A61001C52E9 /* PassSlot DemoTests-Info.plist */,
+				624D182E160E2A61001C52E9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		624D17FC160E2A61001C52E9 /* PassSlot Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624D1836160E2A61001C52E9 /* Build configuration list for PBXNativeTarget "PassSlot Demo" */;
+			buildPhases = (
+				624D17F9160E2A61001C52E9 /* Sources */,
+				624D17FA160E2A61001C52E9 /* Frameworks */,
+				624D17FB160E2A61001C52E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PassSlot Demo";
+			productName = "PassSlot Demo";
+			productReference = 624D17FD160E2A61001C52E9 /* PassSlot Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		624D1823160E2A61001C52E9 /* PassSlot DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624D1839160E2A61001C52E9 /* Build configuration list for PBXNativeTarget "PassSlot DemoTests" */;
+			buildPhases = (
+				624D181F160E2A61001C52E9 /* Sources */,
+				624D1820160E2A61001C52E9 /* Frameworks */,
+				624D1821160E2A61001C52E9 /* Resources */,
+				624D1822160E2A61001C52E9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				624D182A160E2A61001C52E9 /* PBXTargetDependency */,
+			);
+			name = "PassSlot DemoTests";
+			productName = "PassSlot DemoTests";
+			productReference = 624D1824160E2A61001C52E9 /* PassSlot DemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		624D17F4160E2A61001C52E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = PassSlot;
+			};
+			buildConfigurationList = 624D17F7160E2A61001C52E9 /* Build configuration list for PBXProject "PassSlot Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 624D17F2160E2A61001C52E9;
+			productRefGroup = 624D17FE160E2A61001C52E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				624D17FC160E2A61001C52E9 /* PassSlot Demo */,
+				624D1823160E2A61001C52E9 /* PassSlot DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		624D17FB160E2A61001C52E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624D180C160E2A61001C52E9 /* InfoPlist.strings in Resources */,
+				624D1814160E2A61001C52E9 /* Default.png in Resources */,
+				624D1816160E2A61001C52E9 /* Default@2x.png in Resources */,
+				624D1818160E2A61001C52E9 /* Default-568h@2x.png in Resources */,
+				624D181B160E2A61001C52E9 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624D1821160E2A61001C52E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624D1830160E2A61001C52E9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		624D1822160E2A61001C52E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		624D17F9160E2A61001C52E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624D180E160E2A61001C52E9 /* main.m in Sources */,
+				624D1812160E2A61001C52E9 /* PSAppDelegate.m in Sources */,
+				624D181E160E2A61001C52E9 /* PSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624D181F160E2A61001C52E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624D1833160E2A61001C52E9 /* PassSlot_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		624D182A160E2A61001C52E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 624D17FC160E2A61001C52E9 /* PassSlot Demo */;
+			targetProxy = 624D1829160E2A61001C52E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		624D180A160E2A61001C52E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				624D180B160E2A61001C52E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		624D1819160E2A61001C52E9 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				624D181A160E2A61001C52E9 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		624D182E160E2A61001C52E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				624D182F160E2A61001C52E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		624D1834160E2A61001C52E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		624D1835160E2A61001C52E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		624D1837160E2A61001C52E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Downloads/passslot-passslot-ios-sdk-5f1ce8e/sdk\"",
+					"\"$(SRCROOT)/../../sdk\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassSlot Demo/PassSlot Demo-Prefix.pch";
+				INFOPLIST_FILE = "PassSlot Demo/PassSlot Demo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		624D1838160E2A61001C52E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Downloads/passslot-passslot-ios-sdk-5f1ce8e/sdk\"",
+					"\"$(SRCROOT)/../../sdk\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassSlot Demo/PassSlot Demo-Prefix.pch";
+				INFOPLIST_FILE = "PassSlot Demo/PassSlot Demo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		624D183A160E2A61001C52E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PassSlot Demo.app/PassSlot Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassSlot Demo/PassSlot Demo-Prefix.pch";
+				INFOPLIST_FILE = "PassSlot DemoTests/PassSlot DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		624D183B160E2A61001C52E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PassSlot Demo.app/PassSlot Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassSlot Demo/PassSlot Demo-Prefix.pch";
+				INFOPLIST_FILE = "PassSlot DemoTests/PassSlot DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		624D17F7160E2A61001C52E9 /* Build configuration list for PBXProject "PassSlot Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624D1834160E2A61001C52E9 /* Debug */,
+				624D1835160E2A61001C52E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624D1836160E2A61001C52E9 /* Build configuration list for PBXNativeTarget "PassSlot Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624D1837160E2A61001C52E9 /* Debug */,
+				624D1838160E2A61001C52E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624D1839160E2A61001C52E9 /* Build configuration list for PBXNativeTarget "PassSlot DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624D183A160E2A61001C52E9 /* Debug */,
+				624D183B160E2A61001C52E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 624D17F4160E2A61001C52E9 /* Project object */;
+}

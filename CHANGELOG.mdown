@@ -1,3 +1,8 @@
+###0.2.1 - September 22, 2012
+
+* Bugfix for special characters in pass template names
+* New PassSlot Demo App in samples
+ 
 ###0.2 - September 20, 2012
 
 * armv7s support

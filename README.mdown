@@ -1,5 +1,13 @@
 
-Usage
+Samples
+=====
+The PassSlot SDK now contains a demo application which can generate passes. You can find the sample in the samples/PassSlot Demo directory.
+
+Cloud Service
+=====
+The PassSlot SDK requires the PassSlot cloud service for signing passes. You can sign up for a free developer account at [PassSlot.com](https://www.passslot.com)
+
+Installation
 =====
 
 ### Step 1: Add the PassSlot.framework to your Project

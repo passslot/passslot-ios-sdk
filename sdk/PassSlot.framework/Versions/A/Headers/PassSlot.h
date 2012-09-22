@@ -5,6 +5,7 @@
 //  Created by PassSlot on 01.07.12.
 //  Copyright (c) 2012 PassSlot. All rights reserved.
 //
+//  SDK Version 0.2.1
 
 #import <Foundation/Foundation.h>
 
