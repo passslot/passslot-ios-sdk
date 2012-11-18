@@ -45,4 +45,13 @@
  */
 - (NSDictionary*) values;
 
+/** Returns the images
+ 
+ If you create a pass using passWithPassType:serialNumber: you first have to retrieve the images from the server using [PassSlot imagesForPass:pass:] otherwise this method will return nil
+ 
+ 
+ @return An NSArray of PSImage of the pass or nil if they were not yet retrieved from the server
+ */
+- (NSArray*) images;
+
 @end

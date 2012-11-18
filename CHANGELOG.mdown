@@ -1,3 +1,9 @@
+###0.3 - November 18, 2012
+* Support for custom images per pass
+* Support for custom error handler
+* Fixed issue when using Reachability in your own app 
+
+
 ###0.2.1 - September 22, 2012
 
 * Bugfix for special characters in pass template names

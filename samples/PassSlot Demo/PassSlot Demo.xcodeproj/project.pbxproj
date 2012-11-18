@@ -397,7 +397,6 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads/passslot-passslot-ios-sdk-5f1ce8e/sdk\"",
 					"\"$(SRCROOT)/../../sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -414,7 +413,6 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads/passslot-passslot-ios-sdk-5f1ce8e/sdk\"",
 					"\"$(SRCROOT)/../../sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

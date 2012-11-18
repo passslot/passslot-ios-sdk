@@ -46,17 +46,31 @@
 	
 	<option value="//api/name/createPassFromTemplate:withValues:andRequestInstallation:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ createPassFromTemplate:withValues:andRequestInstallation:completion:</option>
 	
+	<option value="//api/name/createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:</option>
+	
 	<option value="//api/name/createPassFromTemplateWithName:withValues:andRequestInstallation:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ createPassFromTemplateWithName:withValues:andRequestInstallation:completion:</option>
 	
+	<option value="//api/name/createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:</option>
+	
 	<option value="//api/name/downloadPass:pass:">&nbsp;&nbsp;&nbsp;&nbsp;+ downloadPass:pass:</option>
+	
+	<option value="//api/name/imagesForPass:pass:">&nbsp;&nbsp;&nbsp;&nbsp;+ imagesForPass:pass:</option>
 	
 	<option value="//api/name/listTemplates:">&nbsp;&nbsp;&nbsp;&nbsp;+ listTemplates:</option>
 	
 	<option value="//api/name/passFromTemplate:withValues:pass:">&nbsp;&nbsp;&nbsp;&nbsp;+ passFromTemplate:withValues:pass:</option>
 	
+	<option value="//api/name/passFromTemplate:withValues:withImages:pass:">&nbsp;&nbsp;&nbsp;&nbsp;+ passFromTemplate:withValues:withImages:pass:</option>
+	
 	<option value="//api/name/passFromTemplateWithName:withValues:pass:">&nbsp;&nbsp;&nbsp;&nbsp;+ passFromTemplateWithName:withValues:pass:</option>
 	
+	<option value="//api/name/passFromTemplateWithName:withValues:withImages:pass:">&nbsp;&nbsp;&nbsp;&nbsp;+ passFromTemplateWithName:withValues:withImages:pass:</option>
+	
 	<option value="//api/name/requestPassInstallation:inViewController:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestPassInstallation:inViewController:completion:</option>
+	
+	<option value="//api/name/setErrorHandler:">&nbsp;&nbsp;&nbsp;&nbsp;+ setErrorHandler:</option>
+	
+	<option value="//api/name/setImages:forPass:updatedPass:">&nbsp;&nbsp;&nbsp;&nbsp;+ setImages:forPass:updatedPass:</option>
 	
 	<option value="//api/name/setValues:forPass:updatedPass:">&nbsp;&nbsp;&nbsp;&nbsp;+ setValues:forPass:updatedPass:</option>
 	
@@ -84,15 +98,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting up PassSlot">Setting up PassSlot</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a Pass">Creating a Pass</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a pass">Creating a pass</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Modifing an Pass Instance">Modifing an Pass Instance</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Modifing a pass instance">Modifing a pass instance</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Downloading Passes">Downloading Passes</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Adding Passes to Passbook">Adding Passes to Passbook</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Pass Templates">Managing Pass Templates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Error handling">Error handling</a></span></li>
 	
 </ul></li>
 
@@ -108,17 +124,31 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPassFromTemplate:withValues:andRequestInstallation:completion:">createPassFromTemplate:withValues:andRequestInstallation:completion:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:">createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPassFromTemplateWithName:withValues:andRequestInstallation:completion:">createPassFromTemplateWithName:withValues:andRequestInstallation:completion:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:">createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadPass:pass:">downloadPass:pass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imagesForPass:pass:">imagesForPass:pass:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listTemplates:">listTemplates:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/passFromTemplate:withValues:pass:">passFromTemplate:withValues:pass:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/passFromTemplate:withValues:withImages:pass:">passFromTemplate:withValues:withImages:pass:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/passFromTemplateWithName:withValues:pass:">passFromTemplateWithName:withValues:pass:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/passFromTemplateWithName:withValues:withImages:pass:">passFromTemplateWithName:withValues:withImages:pass:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestPassInstallation:inViewController:completion:">requestPassInstallation:inViewController:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setErrorHandler:">setErrorHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setImages:forPass:updatedPass:">setImages:forPass:updatedPass:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValues:forPass:updatedPass:">setValues:forPass:updatedPass:</a></span></li>
 	
@@ -214,21 +244,14 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 						</ul>
 						
 						
-						<a title="Creating a Pass" name="task_Creating a Pass"></a>
-						<h3 class="subsubtitle task-title">Creating a Pass</h3>
+						<a title="Creating a pass" name="task_Creating a pass"></a>
+						<h3 class="subsubtitle task-title">Creating a pass</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/createPassFromTemplate:withValues:andRequestInstallation:completion:">+&nbsp;createPassFromTemplate:withValues:andRequestInstallation:completion:</a></code>
 		<span class="tooltip"><p>Create a pass from a template and request the installation of the pass</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/passFromTemplate:withValues:pass:">+&nbsp;passFromTemplate:withValues:pass:</a></code>
-		<span class="tooltip"><p>Create a pass from a template</p></span>
 	</span>
 	
 	
@@ -241,7 +264,42 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:">+&nbsp;createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:</a></code>
+		<span class="tooltip"><p>Create a pass from a template and request the installation of the pass</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:">+&nbsp;createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:</a></code>
+		<span class="tooltip"><p>Create a pass from a template name and request the installation of the pass</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/passFromTemplate:withValues:pass:">+&nbsp;passFromTemplate:withValues:pass:</a></code>
+		<span class="tooltip"><p>Create a pass from a template</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/passFromTemplate:withValues:withImages:pass:">+&nbsp;passFromTemplate:withValues:withImages:pass:</a></code>
+		<span class="tooltip"><p>Create a pass from a template</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/passFromTemplateWithName:withValues:pass:">+&nbsp;passFromTemplateWithName:withValues:pass:</a></code>
+		<span class="tooltip"><p>Create a pass from a template name</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/passFromTemplateWithName:withValues:withImages:pass:">+&nbsp;passFromTemplateWithName:withValues:withImages:pass:</a></code>
 		<span class="tooltip"><p>Create a pass from a template name</p></span>
 	</span>
 	
@@ -250,8 +308,8 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 						</ul>
 						
 						
-						<a title="Modifing an Pass Instance" name="task_Modifing an Pass Instance"></a>
-						<h3 class="subsubtitle task-title">Modifing an Pass Instance</h3>
+						<a title="Modifing a pass instance" name="task_Modifing a pass instance"></a>
+						<h3 class="subsubtitle task-title">Modifing a pass instance</h3>
 
 						<ul class="task-list">
 							<li>
@@ -265,6 +323,20 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 	<span class="tooltip">
 		<code><a href="#//api/name/valuesForPass:pass:">+&nbsp;valuesForPass:pass:</a></code>
 		<span class="tooltip"><p>Get the values of an existing pass</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setImages:forPass:updatedPass:">+&nbsp;setImages:forPass:updatedPass:</a></code>
+		<span class="tooltip"><p>Update the images of an existing pass</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imagesForPass:pass:">+&nbsp;imagesForPass:pass:</a></code>
+		<span class="tooltip"><p>Get the images of an existing pass</p></span>
 	</span>
 	
 	
@@ -310,6 +382,21 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 	<span class="tooltip">
 		<code><a href="#//api/name/listTemplates:">+&nbsp;listTemplates:</a></code>
 		<span class="tooltip"><p>List all available pass templates</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Error handling" name="task_Error handling"></a>
+						<h3 class="subsubtitle task-title">Error handling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setErrorHandler:">+&nbsp;setErrorHandler:</a></code>
+		<span class="tooltip"><p>Sets the error handler</p></span>
 	</span>
 	
 	
@@ -441,6 +528,77 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:" title="createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:"></a>
+	<h3 class="subsubtitle method-title">createPassFromTemplate:withValues:withImages:andRequestInstallation:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a pass from a template and request the installation of the pass</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)createPassFromTemplate:(PSPassTemplate *)<em>template</em> withValues:(NSDictionary *)<em>values</em> withImages:(NSArray *)<em>images</em> andRequestInstallation:(UIViewController *)<em>viewController</em> completion:(PSCompletion)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>template</em></dt>
+			<dd><p>PassTemplate that is used to create the pass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>values</em></dt>
+			<dd><p>Placeholder values that will be filled in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>images</em></dt>
+			<dd><p>Array of <a href="../Classes/PSImage.html">PSImage</a> for the pass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>The UIViewController that will be used to present the PKAddPassesViewController</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a pass from a template and request the installation of the pass</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PassSlot.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/createPassFromTemplateWithName:withValues:andRequestInstallation:completion:" title="createPassFromTemplateWithName:withValues:andRequestInstallation:completion:"></a>
 	<h3 class="subsubtitle method-title">createPassFromTemplateWithName:withValues:andRequestInstallation:completion:</h3>
 	
@@ -467,6 +625,77 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 		<dl class="argument-def parameter-def">
 			<dt><em>values</em></dt>
 			<dd><p>Placeholder values that will be filled in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>The UIViewController that will be used to present the PKAddPassesViewController</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a pass from a template name and request the installation of the pass</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PassSlot.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:" title="createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:"></a>
+	<h3 class="subsubtitle method-title">createPassFromTemplateWithName:withValues:withImages:andRequestInstallation:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a pass from a template name and request the installation of the pass</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)createPassFromTemplateWithName:(NSString *)<em>templateName</em> withValues:(NSDictionary *)<em>values</em> withImages:(NSArray *)<em>images</em> andRequestInstallation:(UIViewController *)<em>viewController</em> completion:(PSCompletion)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>templateName</em></dt>
+			<dd><p>PassTemplate that is used to create the pass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>values</em></dt>
+			<dd><p>Placeholder values that will be filled in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>images</em></dt>
+			<dd><p>Array of <a href="../Classes/PSImage.html">PSImage</a> for the pass</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -546,6 +775,62 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Download an existing pass</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PassSlot.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imagesForPass:pass:" title="imagesForPass:pass:"></a>
+	<h3 class="subsubtitle method-title">imagesForPass:pass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the images of an existing pass</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)imagesForPass:(PSPass *)<em>pass</em> pass:(PSPassBlock)<em>passBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pass</em></dt>
+			<dd><p><a href="../Classes/PSPass.html">PSPass</a> for which the images should be retrieved</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>passBlock</em></dt>
+			<dd><p>A block object to be executed when the pass values were retrieved. This block has no return value and takes a single <a href="../Classes/PSPass.html">PSPass</a> argument with the retrieved values</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the images of an existing pass</p>
 	</div>
 	
 	
@@ -675,6 +960,72 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/passFromTemplate:withValues:withImages:pass:" title="passFromTemplate:withValues:withImages:pass:"></a>
+	<h3 class="subsubtitle method-title">passFromTemplate:withValues:withImages:pass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a pass from a template</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)passFromTemplate:(PSPassTemplate *)<em>template</em> withValues:(NSDictionary *)<em>values</em> withImages:(NSArray *)<em>images</em> pass:(PSPassBlock)<em>passBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>template</em></dt>
+			<dd><p>PassTemplate that is used to create the pass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>values</em></dt>
+			<dd><p>Placeholder values that will be filled in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>images</em></dt>
+			<dd><p>Array of <a href="../Classes/PSImage.html">PSImage</a> for the pass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>passBlock</em></dt>
+			<dd><p>A block object to be executed when the pass was created. This block has no return value and takes a single <a href="../Classes/PSPass.html">PSPass</a> argument which is the created pass</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a pass from a template</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PassSlot.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/passFromTemplateWithName:withValues:pass:" title="passFromTemplateWithName:withValues:pass:"></a>
 	<h3 class="subsubtitle method-title">passFromTemplateWithName:withValues:pass:</h3>
 	
@@ -701,6 +1052,72 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 		<dl class="argument-def parameter-def">
 			<dt><em>values</em></dt>
 			<dd><p>Placeholder values that will be filled in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>passBlock</em></dt>
+			<dd><p>A block object to be executed when the pass was created. This block has no return value and takes a single <a href="../Classes/PSPass.html">PSPass</a> argument which is the created pass</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a pass from a template name</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PassSlot.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/passFromTemplateWithName:withValues:withImages:pass:" title="passFromTemplateWithName:withValues:withImages:pass:"></a>
+	<h3 class="subsubtitle method-title">passFromTemplateWithName:withValues:withImages:pass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a pass from a template name</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)passFromTemplateWithName:(NSString *)<em>templateName</em> withValues:(NSDictionary *)<em>values</em> withImages:(NSArray *)<em>images</em> pass:(PSPassBlock)<em>passBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>templateName</em></dt>
+			<dd><p>PassTemplate that is used to create the pass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>values</em></dt>
+			<dd><p>Placeholder values that will be filled in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>images</em></dt>
+			<dd><p>Array of <a href="../Classes/PSImage.html">PSImage</a> for the pass</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -782,6 +1199,118 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 		<p>Add an existing pass to Passbook</p>
 
 <p>If the pass file was not downloaded yet, this is done before adding the pass to passbook</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PassSlot.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setErrorHandler:" title="setErrorHandler:"></a>
+	<h3 class="subsubtitle method-title">setErrorHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the error handler</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setErrorHandler:(PSErrorBlock)<em>errorHandler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>errorHandler</em></dt>
+			<dd><p>A block object that handles errors</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the error handler</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PassSlot.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setImages:forPass:updatedPass:" title="setImages:forPass:updatedPass:"></a>
+	<h3 class="subsubtitle method-title">setImages:forPass:updatedPass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Update the images of an existing pass</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setImages:(NSArray *)<em>images</em> forPass:(PSPass *)<em>pass</em> updatedPass:(PSPassBlock)<em>passBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>images</em></dt>
+			<dd><p>NSArray of <a href="../Classes/PSImage.html">PSImage</a> that will be used for the pass</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pass</em></dt>
+			<dd><p>Existing <a href="../Classes/PSPass.html">PSPass</a> that should be updated</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>passBlock</em></dt>
+			<dd><p>A block object to be executed when the pass was updated. This block has no return value and takes a single <a href="../Classes/PSPass.html">PSPass</a> argument which is the updated pass</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Update the images of an existing pass</p>
 	</div>
 	
 	
@@ -983,7 +1512,7 @@ NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 PassSlot. All rights reserved. (Last updated: 2012-07-25)</span><br />
+						<p><span class="copyright">&copy; 2012 PassSlot. All rights reserved. (Last updated: 2012-11-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
