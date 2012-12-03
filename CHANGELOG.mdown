@@ -1,3 +1,7 @@
+###0.4 - December 3, 2012
+* Improved compatiblity with other libraries
+* Support for PKAddPassesViewControllerDelegate
+
 ###0.3 - November 18, 2012
 * Support for custom images per pass
 * Support for custom error handler

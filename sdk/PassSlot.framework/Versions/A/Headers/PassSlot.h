@@ -5,7 +5,7 @@
 //  Created by PassSlot on 01.07.12.
 //  Copyright (c) 2012 PassSlot. All rights reserved.
 //
-//  SDK Version 0.2.1
+//  SDK Version 0.4
 
 #import <Foundation/Foundation.h>
 
@@ -63,7 +63,7 @@ typedef void (^PSErrorBlock)(NSError *error);
 /** Create a pass from a template and request the installation of the pass
  @param template PassTemplate that is used to create the pass
  @param values Placeholder values that will be filled in
- @param viewController The UIViewController that will be used to present the PKAddPassesViewController
+ @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
  @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
  */
 + (void) createPassFromTemplate:(PSPassTemplate*)template withValues:(NSDictionary*)values andRequestInstallation:(UIViewController*)viewController completion:(PSCompletion)completion;
@@ -71,7 +71,7 @@ typedef void (^PSErrorBlock)(NSError *error);
 /** Create a pass from a template name and request the installation of the pass
  @param templateName PassTemplate that is used to create the pass
  @param values Placeholder values that will be filled in
- @param viewController The UIViewController that will be used to present the PKAddPassesViewController
+ @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
  @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
  */
 + (void) createPassFromTemplateWithName:(NSString*)templateName withValues:(NSDictionary*)values andRequestInstallation:(UIViewController*)viewController completion:(PSCompletion)completion;
@@ -80,7 +80,7 @@ typedef void (^PSErrorBlock)(NSError *error);
  @param template PassTemplate that is used to create the pass
  @param values Placeholder values that will be filled in
  @param images Array of PSImage for the pass
- @param viewController The UIViewController that will be used to present the PKAddPassesViewController
+ @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
  @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
  */
 + (void) createPassFromTemplate:(PSPassTemplate*)template withValues:(NSDictionary*)values withImages:(NSArray*)images andRequestInstallation:(UIViewController*)viewController completion:(PSCompletion)completion;
@@ -89,7 +89,7 @@ typedef void (^PSErrorBlock)(NSError *error);
  @param templateName PassTemplate that is used to create the pass
  @param values Placeholder values that will be filled in
  @param images Array of PSImage for the pass
- @param viewController The UIViewController that will be used to present the PKAddPassesViewController
+ @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
  @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
  */
 + (void) createPassFromTemplateWithName:(NSString*)templateName withValues:(NSDictionary*)values withImages:(NSArray*)images andRequestInstallation:(UIViewController*)viewController completion:(PSCompletion)completion;
@@ -170,7 +170,7 @@ typedef void (^PSErrorBlock)(NSError *error);
  If the pass file was not downloaded yet, this is done before adding the pass to passbook
  
  @param pass PSPass which should be added
- @param viewController The UIViewController that will be used to present the PKAddPassesViewController
+ @param viewController The UIViewController that will be used to present the PKAddPassesViewController. If the controller conforms to PKAddPassesViewControllerDelegate it is set as the delegate for the PKAddPassesViewController.
  @param completion A block object to be executed when the pass was added to passbook. This block takes no parameters and has no return value.
  */
 + (BOOL) requestPassInstallation:(PSPass*)pass inViewController:(UIViewController*)viewController completion:(PSCompletion)completion;
