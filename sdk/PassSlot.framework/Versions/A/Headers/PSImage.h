@@ -3,7 +3,7 @@
 //  PassSlot
 //
 //  Created by Pascal Brogle on 17.11.12.
-//  Copyright (c) 2012 PassSlot. All rights reserved.
+//  Copyright (c) 2013 PassSlot. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

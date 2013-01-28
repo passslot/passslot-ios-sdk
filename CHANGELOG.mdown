@@ -1,3 +1,6 @@
+###0.5 - January 29, 2013
+* Support for getting raw pass data and PKPass
+
 ###0.4 - December 3, 2012
 * Improved compatiblity with other libraries
 * Support for PKAddPassesViewControllerDelegate

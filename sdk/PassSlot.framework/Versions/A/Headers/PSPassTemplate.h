@@ -3,7 +3,7 @@
 //  PassSlot
 //
 //  Created by PassSlot on 01.07.12.
-//  Copyright (c) 2012 PassSlot. All rights reserved.
+//  Copyright (c) 2013 PassSlot. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

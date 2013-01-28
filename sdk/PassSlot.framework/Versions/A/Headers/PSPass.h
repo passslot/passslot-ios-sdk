@@ -3,10 +3,11 @@
 //  PassSlot
 //
 //  Created by PassSlot on 01.07.12.
-//  Copyright (c) 2012 PassSlot. All rights reserved.
+//  Copyright (c) 2013 PassSlot. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import <PassKit/PassKit.h>
 
 /** This class represents a Pass
  */
@@ -40,7 +41,6 @@
  
  If you create a pass using passWithPassType:serialNumber: you first have to retrieve the values from the server using [PassSlot valuesForPass:pass:] otherwise this method will return nil
  
- 
  @return The place holder values which are used to describe the pass or nil if they were not yet retrieved from the server
  */
 - (NSDictionary*) values;
@@ -53,5 +53,21 @@
  @return An NSArray of PSImage of the pass or nil if they were not yet retrieved from the server
  */
 - (NSArray*) images;
+
+/** Returns the raw pass data
+
+ If you create a pass using passWithPassType:serialNumber: you first have to retrieve the data from the server using [PassSlot downloadPass:pass:] otherwise this method will return nil
+ 
+ @return NSData containing the raw pass data
+ */
+- (NSData*) data;
+
+/** Returns the PKPass
+ 
+ If you create a pass using passWithPassType:serialNumber: you first have to retrieve the data from the server using [PassSlot downloadPass:pass:] otherwise this method will return nil
+ 
+ @return PKPass
+ */
+- (PKPass*) pkPass;
 
 @end

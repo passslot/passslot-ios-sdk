@@ -3,9 +3,9 @@
 //  PassSlot
 //
 //  Created by PassSlot on 01.07.12.
-//  Copyright (c) 2012 PassSlot. All rights reserved.
+//  Copyright (c) 2013 PassSlot. All rights reserved.
 //
-//  SDK Version 0.4
+//  SDK Version 0.5
 
 #import <Foundation/Foundation.h>
 
@@ -29,7 +29,7 @@ typedef void (^PSErrorBlock)(NSError *error);
     NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:
     @"John", @"firstName" ,
     @"Doe", @"lastName",
-    @"2012", @"memberSince", nil];
+    @"2013", @"memberSince", nil];
  
     [PassSlot createPassFromTemplateWithName:@"Member Card" withValues:values
         andRequestInstallation:self completion:^{
