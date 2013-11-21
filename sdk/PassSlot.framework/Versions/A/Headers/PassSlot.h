@@ -154,6 +154,11 @@ typedef void (^PSErrorBlock)(NSError *error);
  */
 + (void) imagesForPass:(PSPass*)pass pass:(PSPassBlock)passBlock;
 
+/** Get the pass json of an existing pass
+ @param pass PSPass for which the json should be retrieved
+ @param passBlock A block object to be executed when the pass json was retrieved. This block has no return value and takes a single PSPass argument with the retrieved json
+ */
++ (void) jsonForPass:(PSPass*)pass pass:(PSPassBlock)passBlock;
 
 /** @name Downloading Passes */
 

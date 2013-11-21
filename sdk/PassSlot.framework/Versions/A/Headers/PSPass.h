@@ -11,7 +11,7 @@
 
 /** This class represents a Pass
  */
-@interface PSPass : NSObject
+@interface PSPass : NSObject <NSCoding>
 
 /** @name Creating a Pass */
 
@@ -53,6 +53,14 @@
  @return An NSArray of PSImage of the pass or nil if they were not yet retrieved from the server
  */
 - (NSArray*) images;
+
+/** Returns the pass json
+ 
+ You first have to retrieve the full json from the server using [PassSlot jsonForPass:pass:] otherwise this method will only return a dictionary with serialNumber and passTypeIdentifier
+ 
+ @return The pass json used to describe the pass
+ */
+- (NSDictionary*) json;
 
 /** Returns the raw pass data
 

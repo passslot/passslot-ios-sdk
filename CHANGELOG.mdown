@@ -1,3 +1,7 @@
+###0.6 - November 1, 2013
+* Support for downloading pass json
+* PSPass now conforms to NSCoding
+
 ###0.5 - January 29, 2013
 * Support for getting raw pass data and PKPass
 
