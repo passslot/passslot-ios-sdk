@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PassSlot"
-  s.version      = "0.6"
+  s.version      = "0.7"
   s.summary      = "Objective-C Framework (SDK) for easy Passbook integration."
   s.description  = <<-DESC
                      PassSlot is a free service for developers that aims to make Passbook integration easy - Really easy.
@@ -12,7 +12,7 @@ It combines a Cloud Service that distributes, manages and signs your passes with
     :file => 'LICENSE'
   }
   s.author       = { "PassSlot" => "support@passslot.com" }
-  s.source       = { :git => "https://github.com/passslot/passslot-ios-sdk.git", :tag => "v0.6" }
+  s.source       = { :git => "https://github.com/passslot/passslot-ios-sdk.git", :tag => "v0.7" }
   s.platform     = :ios, '6.0'
   s.source_files = 'sdk/PassSlot.framework/Versions/A/Headers'
   s.preserve_paths = "sdk/PassSlot.framework"
